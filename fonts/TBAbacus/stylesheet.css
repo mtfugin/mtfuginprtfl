@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'TB Abacus';
+    src: url('TBAbacus.eot');
+    src: local('TB Abacus'), local('TBAbacus'),
+        url('TBAbacus.eot?#iefix') format('embedded-opentype'),
+        url('TBAbacus.woff2') format('woff2'),
+        url('TBAbacus.woff') format('woff'),
+        url('TBAbacus.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

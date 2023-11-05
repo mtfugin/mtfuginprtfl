@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- FAVICON -->
+        <link rel="icon" type="iamge/svg" href="Portfolio Assets/Svg/1.svg">
+
+        <!-- WEB TITLE -->
+        <title>
+            Amerogin Kamid
+        </title>
+
+        <!----------------------------------------------------------------->
+
+        <!-- MAIN (CSS) -->
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- CSPLASHSCREEN (CSS) -->
+        <link rel="stylesheet" href="css/splashscreen.css">
+        <script src="/js/splashscreen.js"></script>
+
+        <!----------------------------------------------------------------->
+
+        <!-- LIB GREEN SOCK -->
+        <script src="/js/gsap.min.js"></script>
+
+        <!-- LIB JQUERY -->
+        <script src="/js/jquery.min.js"></script>
+
+        <!-- BGM -->
+        <script src="/js/bgm.js"></script>
+
+        <!----------------------------------------------------------------->
+    </head>
+
+    <body>
+        <a name="backtoTop"></a>
+
+        <!----------------------------------------------------------------->
+        <!-- SPLASHSCREEN -->
+        <div id="splashscreen"></div>
+        <!-- PRELOADER -->
+        <div>
+        <div class="counter" id="counter">0</div>
+        <div class="overlay" id="overlay">
+            <div class="bar" id="bar1"></div>
+            <div class="bar" id="bar2"></div>
+            <div class="bar" id="bar3"></div>
+            <div class="bar" id="bar4"></div>
+            <div class="bar" id="bar5"></div>
+            <div class="bar" id="bar6"></div>
+        </div>
+        <script src="/js/preloader.js"></script>
+        </div>
+        <!-- START -->
+        <div>
+            <div class="start" id="start">
+                <img src="/Portfolio Assets/Svg/4.svg" class="startlogo">
+                <button onClick="startThis()" class="startbtn">START</button>
+            </div>
+            <script src="/js/startbtn.js"></script>
+        </div>
+        <!-- CURSOR -->
+        <div>
+            <div class="cursor"></div>
+            <div class="cursor"></div>
+            <div class="cursor"></div>
+            <div class="cursor"></div>
+            <div class="cursor"></div>
+            <div class="cursor"></div>
+            <div class="cursor"></div>
+            <div class="cursor"></div>
+            <div class="cursor"></div>
+            <div class="cursor"></div>
+            <div class="cursor"></div>
+            <div class="cursor"></div>
+            <div class="cursor"></div>
+            <div class="cursor"></div>
+            <div class="cursor"></div>
+            <div class="cursor"></div>
+            <div class="cursor"></div>
+            <div class="cursor"></div>
+            <div class="cursor"></div>
+            <div class="cursor"></div>
+        </div>
+
+                <!-- CURSOR CHANGE: startbtn -->
+                <div>
+                    <div class="cursor-diff" id="cursor-diff"></div>
+                    <script src="/js/cursor.js"></script>
+                    </div>
+                    <!-- RESPONSIVE -->
+                    <script src="/js/responsive.js"></script>
+
+                    <!-- MAIN CONTENTS -->
+
+                    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.27/bundled/lenis.min.js"></script>
+                    <script src="/js/lenis/lenisimp.js"></script>
+
+
+        <header class="navigations">
+            <a href="#" onclick="window.location.reload();">
+                <img src="/Portfolio Assets/Svg/5.svg"
+                alt="Amerogin Kamid's Logo"
+                class="logo" id="logo">
+            </a>
+
+            <nav>
+                <ul>
+                    <li><a href="#" class="menu"">ABOUT</a></li>
+                    <li><a href="#" class="menu">WORK</a></li>
+                    <li><a href="#" class="menu">CONTACT</a></li>
+                </ul>
+
+
+            </nav>
+
+            <p class="soundtoggle" id="soundtoggle">
+                <a href="#" onclick="togglePlayPause(); event.preventDefault();">SOUND ON</a>
+            </p>
+        </header>
+        <div class="wrapper_outer">
+        <div class="wrapper">
+        <div class="sections">
+            <div id="section1">
+                <div id="tagline">
+                    <p id="nameontagline">
+                        AMEROGIN KAMID
+                    </p>
+                    <p id="tagline">
+                        SCALING
+                    </p>
+                    <p id="tagline" style="color: #bcebeb; mix-blend-mode: difference;">
+                        TECH-ART
+                    </p>
+                    <p id="tagline" style="color: #bcebeb; mix-blend-mode: difference;">
+                        SUMMIT
+                    </p>
+                    <p id="tagline">
+                        SINCE
+                    </p>
+                    <p id="tagline">
+                        2023
+                    </p>
+                </div>
+            </div>
+
+            <div class="video-container">
+            <video autoplay muted loop id="video-background" class="hidden">
+                <source src="/videos/bg.mkv">
+                Your browser does not support the video tag.
+            </video>
+            </div>
+            <div id="section2"></div>
+            </div>
+            </div>
+        </div>
+
+        <a href="mailto:ameroginkamid@gmail.com" title="Click to send an E-mail">
+            > Email Amerogin
+        </a>
+
+        <br>
+
+        <a href="test.html" title="Go to the Test Page">
+            > Test Page
+        </a>
+
+        <button onclick="togglePlayPause()" id="playPauseButton">Pause</button>
+        <section id="bottom"></section>
+        <script>
+            var audioFiles = [
+                '/sounds/anima.m4a',
+                '/sounds/totoro.mp3',
+                '/sounds/bygonedays.mp3'
+            ];
+            var currentAudioIndex = 0;
+            var backgroundMusic = new Audio(audioFiles[currentAudioIndex]);
+            backgroundMusic.volume = 0.1; // Set the initial volume here (between 0 and 1)
+            backgroundMusic.addEventListener('ended', function() {
+                currentAudioIndex = (currentAudioIndex + 1) % audioFiles.length;
+                backgroundMusic.src = audioFiles[currentAudioIndex];
+                backgroundMusic.play();
+            });
+
+            var soundtoggle = document.querySelector('.soundtoggle a'); // selecting the 'a' tag within the element with class 'soundtoggle'
+
+            function togglePlayPause() {
+                var playPauseButton = document.getElementById('playPauseButton'); // assuming there is an element with ID 'playPauseButton'
+                if (backgroundMusic.paused) {
+                    backgroundMusic.play();
+                    playPauseButton.innerHTML = 'Pause';
+                    soundtoggle.innerHTML = 'SOUND ON';
+                    soundtoggle.style.color = '#fff9ebc1';
+                } else {
+                    backgroundMusic.pause();
+                    playPauseButton.innerHTML = 'Play';
+                    soundtoggle.innerHTML = 'SOUND OFF';
+                    soundtoggle.style.color = '#fff9eb41';
+                }
+            }
+
+            // Autoplay the first audio
+            backgroundMusic.play();
+            backgroundMusic.pause();
+
+        </script>
+    </body>
+</html>

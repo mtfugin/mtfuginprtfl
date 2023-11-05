@@ -1,0 +1,12 @@
+/*Loader*/
+#splashscreen {
+    background: #fff9eb url(/gif/loader/loader.gif) no-repeat center;
+    background-size: 15%;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    z-index: 903;
+}

@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'Blu Sans';
+    src: url('BluSans-Light.eot');
+    src: local('Blu Sans Light'), local('BluSans-Light'),
+        url('BluSans-Light.eot?#iefix') format('embedded-opentype'),
+        url('BluSans-Light.woff2') format('woff2'),
+        url('BluSans-Light.woff') format('woff'),
+        url('BluSans-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Blu Sans';
+    src: url('BluSans-Medium.eot');
+    src: local('Blu Sans Medium'), local('BluSans-Medium'),
+        url('BluSans-Medium.eot?#iefix') format('embedded-opentype'),
+        url('BluSans-Medium.woff2') format('woff2'),
+        url('BluSans-Medium.woff') format('woff'),
+        url('BluSans-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Blu Sans';
+    src: url('BluSans-Bold.eot');
+    src: local('Blu Sans Bold'), local('BluSans-Bold'),
+        url('BluSans-Bold.eot?#iefix') format('embedded-opentype'),
+        url('BluSans-Bold.woff2') format('woff2'),
+        url('BluSans-Bold.woff') format('woff'),
+        url('BluSans-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Blu Sans';
+    src: url('BluSans-Black.eot');
+    src: local('Blu Sans Black'), local('BluSans-Black'),
+        url('BluSans-Black.eot?#iefix') format('embedded-opentype'),
+        url('BluSans-Black.woff2') format('woff2'),
+        url('BluSans-Black.woff') format('woff'),
+        url('BluSans-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Blu Sans';
+    src: url('BluSans-Regular.eot');
+    src: local('Blu Sans Regular'), local('BluSans-Regular'),
+        url('BluSans-Regular.eot?#iefix') format('embedded-opentype'),
+        url('BluSans-Regular.woff2') format('woff2'),
+        url('BluSans-Regular.woff') format('woff'),
+        url('BluSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
