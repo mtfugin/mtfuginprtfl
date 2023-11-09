@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!-- FAVICON -->
-        <link rel="icon" type="iamge/svg" href="Portfolio Assets/Svg/1.svg">
+        <link rel="icon" type="iamge/svg" href="Portfolio_Assets/Svg/1.svg">
 
         <!-- WEB TITLE -->
         <title>
@@ -58,7 +58,7 @@
         <!-- START -->
         <div>
             <div class="start" id="start">
-                <img src="/Portfolio Assets/Svg/4.svg" class="startlogo">
+                <img src="/Portfolio_Assets/Svg/4.svg" class="startlogo">
                 <button onClick="startThis()" class="startbtn">START</button>
             </div>
             <script src="/js/startbtn.js"></script>
@@ -101,16 +101,43 @@
                     <script src="/js/lenis/lenisimp.js"></script>
 
 
+
         <header class="navigations">
-            <a href="#" onclick="window.location.reload();">
-                <img src="/Portfolio Assets/Svg/5.svg"
+            <a href="#" onclick="lenis.scrollTo('#section1')">
+                <img src="/Portfolio_Assets/Svg/6.svg"
                 alt="Amerogin Kamid's Logo"
                 class="logo" id="logo">
             </a>
 
+            <a href="https://www.facebook.com/amerogink.p" target="_blank">
+                <img src="/Portfolio_Assets/Svg/facebook.svg"
+                alt="Amerogin Kamid's Facebook"
+                class="logo" id="facebook">
+            </a>
+
+            <a href="https://instagram.com/mtfugin__00" target="_blank">
+                <img src="/Portfolio_Assets/Svg/instagram.svg"
+                alt="Amerogin Kamid's Instagram"
+                class="logo" id="instagram">
+            </a>
+
+            <a href="https://discord.com/users/747622138730512424" target="_blank">
+                <img src="/Portfolio_Assets/Svg/discord.svg"
+                alt="Amerogin Kamid's Discord"
+                class="logo" id="discord">
+            </a>
+
+            <a href="https://www.linkedin.com/in/mtfugin" target="_blank">
+                <img src="/Portfolio_Assets/Svg/linkedin.svg"
+                alt="Amerogin Kamid's LinkedIn"
+                class="logo" id="linkedin">
+            </a>
+
+            <script src="/js/socialshover.js"></script>
+
             <nav>
                 <ul>
-                    <li><a href="#" class="menu"">ABOUT</a></li>
+                    <li><a href="#" onclick="lenis.scrollTo('#section1')" class="menu"">ABOUT</a></li>
                     <li><a href="#" class="menu">WORK</a></li>
                     <li><a href="#" class="menu">CONTACT</a></li>
                 </ul>
@@ -150,7 +177,7 @@
 
             <div class="video-container">
             <video autoplay muted loop id="video-background" class="hidden">
-                <source src="/videos/bg.mkv">
+                <source src="/videos/bg2.mp4">
                 Your browser does not support the video tag.
             </video>
             </div>
@@ -169,7 +196,7 @@
             > Test Page
         </a>
 
-        <button onclick="togglePlayPause()" id="playPauseButton">Pause</button>
+        <button onclick="togglePlayPause()" id="playPauseButton" style="display: none;">Pause</button>
         <section id="bottom"></section>
         <script>
             var audioFiles = [
@@ -194,7 +221,7 @@
                     backgroundMusic.play();
                     playPauseButton.innerHTML = 'Pause';
                     soundtoggle.innerHTML = 'SOUND ON';
-                    soundtoggle.style.color = '#fff9ebc1';
+                    soundtoggle.style.color = '#fff9eb';
                 } else {
                     backgroundMusic.pause();
                     playPauseButton.innerHTML = 'Play';

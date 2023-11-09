@@ -112,13 +112,14 @@ function animatediffCursors() {
 }
 animatediffCursors();
 
+// ANTI-RIGHT CLICK + COPYRIGHT HEHEHE
 
 document.addEventListener('contextmenu', function (e) {
-    e.preventDefault(); // Prevent the default context menu
+    e.preventDefault();
     const copyrightMessage = document.createElement('div');
-    copyrightMessage.innerHTML = 'COPYRIGHT © 2023<br>AMEROGIN KAMID<br>ALL RIGHTS RESERVED<br><br>║▌║█║▌│║▌║▌█'; // Replace with your own copyright message
+    copyrightMessage.innerHTML = 'COPYRIGHT © 2023<br>AMEROGIN KAMID<br>ALL RIGHTS RESERVED<br>ムトフギン<br><br>║▌║█║▌│║▌║▌█'; // Replace with your own copyright message
     copyrightMessage.id = 'copyrightMessage';
-    document.body.appendChild(copyrightMessage); // Append the message to the document
+    document.body.appendChild(copyrightMessage);
 
     function updatePosition(e) {
         const mouseX = e.clientX;
@@ -137,5 +138,6 @@ document.addEventListener('contextmenu', function (e) {
     setTimeout(() => {
         document.body.removeChild(document.getElementById('copyrightMessage'));
         document.removeEventListener('mousemove', updatePosition);
-    }, 2000); // Adjust the duration as needed (in milliseconds)
+    }, 2000);
 });
+
