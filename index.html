@@ -19,8 +19,12 @@
         <link rel="stylesheet" href="css/style.css">
 
         <!-- CSPLASHSCREEN (CSS) -->
+
         <link rel="stylesheet" href="css/splashscreen.css">
         <script src="/js/splashscreen.js"></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+
 
         <!----------------------------------------------------------------->
 
@@ -103,7 +107,7 @@
 
 
         <header class="navigations">
-            <a href="#" onclick="lenis.scrollTo('#section1')">
+            <a href="#" onclick="lenis.scrollTo('#hero')">
                 <img src="/Portfolio_Assets/Svg/6.svg"
                 alt="Amerogin Kamid's Logo"
                 class="logo" id="logo">
@@ -137,7 +141,7 @@
 
             <nav>
                 <ul>
-                    <li><a href="#" onclick="lenis.scrollTo('#section1')" class="menu"">ABOUT</a></li>
+                    <li><a href="#" onclick="lenis.scrollTo('#about')" class="menu"">ABOUT</a></li>
                     <li><a href="#" class="menu">WORK</a></li>
                     <li><a href="#" class="menu">CONTACT</a></li>
                 </ul>
@@ -149,10 +153,17 @@
                 <a href="#" onclick="togglePlayPause(); event.preventDefault();">SOUND ON</a>
             </p>
         </header>
-        <div class="wrapper_outer">
-        <div class="wrapper">
+
         <div class="sections">
-            <div id="section1">
+            <div id="background">
+                <div class="video-container">
+                    <video autoplay muted loop id="video-background" class="hidden">
+                        <source src="/videos/bg2.mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+            <div id="hero">
                 <div id="tagline">
                     <p id="nameontagline">
                         AMEROGIN KAMID
@@ -175,17 +186,92 @@
                 </div>
             </div>
 
-            <div class="video-container">
-            <video autoplay muted loop id="video-background" class="hidden">
-                <source src="/videos/bg2.mp4">
-                Your browser does not support the video tag.
-            </video>
+
+            <div id="about">
+                <div class="aboutmehead">
+                    ABOUT ME
+                </div>
+                <div class="aboutme">
+                    I am GIN, a dedicated creative-technologist weaving minimalist design into captivating digital experiences.
+                </div>
             </div>
-            <div id="section2"></div>
+
+            <div class="cursor-diff2"></div>
+
+            <div id="about2">
+                test
+            </div>
+
             </div>
             </div>
         </div>
 
+        <script>
+ document.addEventListener("DOMContentLoaded", function () {
+    const aboutMe = document.querySelector(".aboutme");
+    const aboutMeHead = document.querySelector(".aboutmehead");
+    const diffCursor = document.querySelector(".cursor-diff2");
+
+    let isCursorVisible = false;
+
+    function fadeInCursor() {
+        if (!isCursorVisible) {
+            gsap.to(diffCursor, { duration: 0.5, opacity: 1 });
+            isCursorVisible = true;
+        }
+    }
+
+    function fadeOutCursor() {
+        if (isCursorVisible) {
+            gsap.to(diffCursor, { duration: 0.5, opacity: 0 });
+            isCursorVisible = false;
+        }
+    }
+
+    aboutMe.addEventListener("mouseover", function () {
+        fadeInCursor();
+    });
+
+    aboutMeHead.addEventListener("mouseover", function () {
+        fadeInCursor();
+    });
+
+    aboutMe.addEventListener("mouseout", function () {
+        fadeOutCursor();
+    });
+
+    aboutMeHead.addEventListener("mouseout", function () {
+        fadeOutCursor();
+    });
+
+    aboutMe.addEventListener("mousemove", function (e) {
+        updateCoords(e);
+        updateCursor();
+    });
+
+    aboutMeHead.addEventListener("mousemove", function (e) {
+        updateCoords(e);
+        updateCursor();
+    });
+
+    function updateCoords(e) {
+        coords.x = e.clientX;
+        coords.y = e.clientY;
+    }
+
+    function updateCursor() {
+        const x = coords.x;
+        const y = coords.y;
+
+        diffCursor.style.left = x - 175 + "px";
+        diffCursor.style.top = y - 175 + "px";
+    }
+});
+
+
+        </script>
+
+        <div id="footer">
         <a href="mailto:ameroginkamid@gmail.com" title="Click to send an E-mail">
             > Email Amerogin
         </a>
@@ -195,7 +281,6 @@
         <a href="test.html" title="Go to the Test Page">
             > Test Page
         </a>
-
         <button onclick="togglePlayPause()" id="playPauseButton" style="display: none;">Pause</button>
         <section id="bottom"></section>
         <script>
@@ -235,5 +320,6 @@
             backgroundMusic.pause();
 
         </script>
+        </div>
     </body>
 </html>

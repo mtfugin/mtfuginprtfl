@@ -71,6 +71,22 @@ p{
     z-index: 99999999; /* so that it stays on top of all other elements */
   }
 
+  .cursor-diff2 {
+    height: 350px;
+    width: 350px;
+    border-radius: 100%;
+    background-color: #fff9eb;
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    left: 0;
+    transition: transform .3s ease;
+    transform-origin: center center;
+    pointer-events: none;
+    display: block;
+    mix-blend-mode: difference;
+    z-index: 99999999; /* so that it stays on top of all other elements */
+  }
 
 /*Splashscreen*/
 #splashscreen {
@@ -116,9 +132,12 @@ p{
     align-items: center;
     z-index: 903;
     color: transparent;
+    font-family: HNBold, HWBold, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    color: #fff9eb;
+    letter-spacing: -3px;
     font-size: 250px;
     font-weight: bolder;
-    font-family: bebas, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     display: none;
     background-color: #565656;
     text-shadow: 2px 2px 3px #fff9eb;
@@ -404,20 +423,22 @@ nav ul li a {
 
 /*------------------/ SECTIONS /------------------*/
 
-#section1{
+#background{
     background-color: hwb(345 12% 86%);
     width: 100%;
-    height: 100vh;
-    position: relative;
-    display:block;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    z-index: 800;
 }
 
 .video-container video {
+    position: absolute;
     opacity: 0;
 }
 
 #video-background {
-    position:absolute;
+    position: absolute;
     right: 0;
     bottom: 0;
     min-width: 100%;
@@ -479,10 +500,70 @@ nav ul li a {
     z-index: 895;
 }
 
-#section2{
+#hero{
+    mix-blend-mode: difference;
+    position: fixed;
     background-color: transparent;
     width: 100%;
     height: 100vh;
+    position: relative;
+    display:block;
+    /*display: flex*/
+    /*padding: 50px*/
+    min-height: 100vh;
+    align-items: center;
+    overflow: hidden;
+    z-index: 895;
+
+}
+
+#about{
+    background-color: #221e1f;
+    width: 100vw;
+    height: 85vh;
+    position: relative;
+    display:block;
+    align-items: center;
+    overflow: hidden;
+    z-index: 801;
+}
+
+
+.aboutmehead{
+    mix-blend-mode: difference;
+    position: absolute;
+    text-align: left;
+    margin-top: 11%;
+    margin-left: 19.5%;
+    margin-right: 15%;
+    transform: translate(-50%, -50%);
+    font-family: HN;
+    font-size: 15px;
+    text-align: left;
+    color: #fff9eb;
+    letter-spacing: 5px;
+    z-index: 895;
+
+}
+
+.aboutme {
+    font-family: HNBold;
+    text-transform: uppercase;
+    color: #dad2c1;
+    text-align: left;
+    margin-top: 13%;
+    margin-left: 15%;
+    margin-right: 15%;
+    font-size: 75px;
+    line-height: 80px;
+    z-index: 895;
+}
+
+#about2{
+    position: fixed;
+    background-color: #dad2c1;
+    width: 100vw;
+    height: 105vh;
     position: relative;
     display:block;
     /*display: flex*/
@@ -513,6 +594,7 @@ nav ul li a {
     cursor: pointer;
     letter-spacing: 6px;
 }
+
 
 /*------------------/ RESPONSIVENESS /------------------*/
 
