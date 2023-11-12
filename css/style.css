@@ -75,7 +75,7 @@ p{
     height: 350px;
     width: 350px;
     border-radius: 100%;
-    background-color: #fff9eb;
+    background-color: #dad2c1;
     position: fixed;
     top: 0;
     opacity: 0;
@@ -219,12 +219,6 @@ p{
     color: #fff9eb;
     transition: 500ms;
 }
-
-.container{
-    background-color: #221e1f;
-    display: inline-block;
-}
-
 #contents {
     display: inline-block;
     margin-left: 10%;
@@ -236,16 +230,6 @@ p{
 }
 
 /*------------------/ OTHERS /------------------*/
-
-.sticky {
-    display: inline-block;
-    position: fixed;
-    margin-top: 55px;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    z-index: 9999;
-}
 
 header .navigations {
     z-index: 99999;
@@ -520,7 +504,7 @@ nav ul li a {
 #about{
     background-color: #221e1f;
     width: 100vw;
-    height: 85vh;
+    height: 100vh;
     position: relative;
     display:block;
     align-items: center;
@@ -534,12 +518,30 @@ nav ul li a {
     position: absolute;
     text-align: left;
     margin-top: 11%;
-    margin-left: 19.5%;
+    margin-left: 18.7%;
     margin-right: 15%;
     transform: translate(-50%, -50%);
     font-family: HN;
     font-size: 15px;
     text-align: left;
+    color: #fff9eb;
+    letter-spacing: 5px;
+    z-index: 895;
+
+}
+
+.aboutlogo{
+    color: #dad2c1;
+    background-color: dad2c1;
+    position: absolute;
+    text-align: left;
+    margin-top: 60%;
+    left: 950px;
+    right:210px;
+    bottom: 100px;
+    font-family: HN;
+    font-size: 20px;
+    text-align: right;
     color: #fff9eb;
     letter-spacing: 5px;
     z-index: 895;
@@ -559,11 +561,37 @@ nav ul li a {
     z-index: 895;
 }
 
-#about2{
+
+
+.viewCVbtn {
+    text-decoration: none;
+    color: #221e1f;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 16px 40px;
+    border-radius: 500px;
+    display: inline-block;
+    font-family: HNBold;
+    font-weight: 500;
+    transition: all 0.4s ease-in-out;
+    background-size: 152% 100%;
+    background: #beb7a7;
+    border: 2px solid #beb7a7;
+    margin-top: 3%;
+    margin-left: 15%;
+}
+.viewCVbtn:hover {
+    background: transparent;
+    border-color: #beb7a7;
+    color: #beb7a7;
+}
+
+#spreadme{
     position: fixed;
     background-color: #dad2c1;
     width: 100vw;
-    height: 105vh;
+    height: auto;
     position: relative;
     display:block;
     /*display: flex*/
@@ -573,6 +601,98 @@ nav ul li a {
     overflow: hidden;
     z-index: 801;
 }
+
+#whatido{
+    position: fixed;
+    background-color: #dad2c1;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display:block;
+    /*display: flex*/
+    /*padding: 50px*/
+    align-items: center;
+    overflow: hidden;
+    z-index: 801;
+}
+
+#headpara {
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 5%;
+    font-size: 20px;
+    font-family: HWBold;
+    color: #fff9eb;
+}
+
+#paragraphs {
+    margin-right: 15%;
+    margin-left: 15%;
+    margin-bottom: 5%;
+}
+
+#works-singles {
+    width: 100%;
+    height: fit-content;
+    height: 100%;
+    display: block;
+}
+
+#sign{
+    margin-left: 15%;
+    width: 200px;
+    margin-bottom: 5%;
+}
+
+.works {
+    background-color: #221e1f;
+    width: 100vw;
+    height: auto;
+    position: relative;
+    display:block;
+    align-items: center;
+    overflow: hidden;
+    z-index: 801;
+}
+
+.footer {
+    background-color: #dad2c1;
+    width: 100vw;
+    height: auto;
+    position: relative;
+    display:block;
+    align-items: center;
+    overflow: hidden;
+    z-index: 801;
+}
+
+footer {
+    background-color: #221e1f;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+
+  footer a {
+    text-decoration: none;
+    color: white;
+  }
+
+.image-container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+  }
+
+
+
+  .image-container img {
+    flex: 2;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+
 
 /*------------------/ OTHERS /------------------*/
 
@@ -639,11 +759,6 @@ body.mobile .startbtn:hover {
     box-shadow: -5px -5px 15px #817c70, 5px 5px 15px #222, inset 5px 5px 10px #222, inset -5px -5px 10px #817c70;
   color: #fff9eb;
   transition: 500ms;
-}
-
-container.mobile {
-    width: 100%;
-    height: 100%;
 }
 
 body.mobile #loader {
@@ -817,6 +932,74 @@ body.mobile .cursor-diff {
         .soundtoggle {
             transition: all 0.5s ease;
         }
+
+
+#about{
+    background-color: #221e1f;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display:block;
+    align-items: center;
+    overflow: hidden;
+    z-index: 801;
+}
+
+
+.aboutmehead{
+    mix-blend-mode: difference;
+    position: absolute;
+    text-align: left;
+    margin-top: 10%;
+    margin-left: 18.7%;
+    margin-right: 15%;
+    transform: translate(-50%, -50%);
+    font-family: HN;
+    font-size: 15px;
+    text-align: left;
+    color: #fff9eb;
+    letter-spacing: 5px;
+    z-index: 895;
+
+}
+
+.aboutme {
+    font-family: HNBold;
+    text-transform: uppercase;
+    color: #dad2c1;
+    text-align: left;
+    margin-top: 13%;
+    margin-left: 10.5%;
+    margin-right: 15%;
+    font-size: 70px;
+    line-height: 75px;
+    z-index: 895;
+}
+
+
+.viewCVbtn {
+    text-decoration: none;
+    color: #221e1f;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 16px 40px;
+    border-radius: 500px;
+    display: inline-block;
+    font-family: HNBold;
+    font-weight: 500;
+    transition: all 0.4s ease-in-out;
+    background-size: 152% 100%;
+    background: #dad2c1;
+    border: 2px solid #dad2c1;
+    margin-top: %;
+    margin-left: 11%;
+}
+.viewCVbtn:hover {
+    background: transparent;
+    border-color: #dad2c1;
+    color: #dad2c1;
+}
     }
 
 @media only screen and (max-width: 767px) {
@@ -936,6 +1119,75 @@ body.mobile .cursor-diff {
         .soundtoggle {
             transition: all 0.5s ease;
         }
+
+
+#about{
+    background-color: #221e1f;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display:block;
+    align-items: center;
+    overflow: hidden;
+    z-index: 801;
+}
+
+
+.aboutmehead{
+    mix-blend-mode: difference;
+    position: absolute;
+    text-align: left;
+    margin-top: 40%;
+    margin-left: 30.7%;
+
+    margin-right: 15%;
+    transform: translate(-50%, -50%);
+    font-family: HN;
+    font-size: 15px;
+    text-align: left;
+    color: #fff9eb;
+    letter-spacing: 5px;
+    z-index: 895;
+
+}
+
+.aboutme {
+    font-family: HNBold;
+    text-transform: uppercase;
+    color: #dad2c1;
+    text-align: left;
+    margin-top: 50%;
+    margin-left: 15%;
+    margin-right: 15%;
+    font-size: 32px;
+    line-height: 33px;
+    z-index: 895;
+}
+
+
+.viewCVbtn {
+    text-decoration: none;
+    color: #221e1f;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 5px 34px;
+    border-radius: 500px;
+    display: inline-block;
+    font-family: HNBold;
+    font-weight: 500;
+    transition: all 0.4s ease-in-out;
+    background-size: 152% 100%;
+    background: #dad2c1;
+    border: 2px solid #dad2c1;
+    margin-top: 10%;
+    margin-left: 15%;
+}
+.viewCVbtn:hover {
+    background: transparent;
+    border-color: #dad2c1;
+    color: #dad2c1;
+}
   }
 
 

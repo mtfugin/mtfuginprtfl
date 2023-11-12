@@ -142,8 +142,9 @@
             <nav>
                 <ul>
                     <li><a href="#" onclick="lenis.scrollTo('#about')" class="menu"">ABOUT</a></li>
-                    <li><a href="#" class="menu">WORK</a></li>
-                    <li><a href="#" class="menu">CONTACT</a></li>
+                    <li><a href="#" onclick="lenis.scrollTo('#whatido')"
+                         class="menu">WORK</a></li>
+                    <li><a href="#" onclick="lenis.scrollTo('.footer')" class="menu">CONTACT</a></li>
                 </ul>
 
 
@@ -154,6 +155,7 @@
             </p>
         </header>
 
+        <div class="container" id="container">
         <div class="sections">
             <div id="background">
                 <div class="video-container">
@@ -192,24 +194,229 @@
                     ABOUT ME
                 </div>
                 <div class="aboutme">
-                    I am GIN, a dedicated creative-technologist weaving minimalist design into captivating digital experiences.
+                    I am Amerogin, a dedicated creative-technologist. <br>I weave minimalist design into captivating digital experiences.
                 </div>
+                <a href="#" onclick="toggle()" class="viewCVbtn">Download CV (Full)</a>
             </div>
+
+            <script type="text/javascript">
+                function toggle(){
+                    window.open('files/Amerogin Kamid - Curriculum Vitae - 10152023.pdf');
+                }
+            </script>
+
 
             <div class="cursor-diff2"></div>
 
-            <div id="about2">
-                test
+            <div id="spreadme">
+                <div class="aboutlogo";">
+                    The logo, a reflection of my social media username "@mtfugin," is a graceful homage to my love for Japanese culture and Mount Fuji, with a smoothly curved mountain peak in a harmonious blend of #231f20, #6b9dab, #fff9eb, and #57808b. The absence of sharp edges symbolizes my balanced approach to life, while the inclusion of two circles on the mountain's upper back signifies the collaborative spirit behind my username's creation. With rounded borders exuding warmth and inclusivity, the design captures my affinity for earthy tones and the tranquility they embody, encapsulating my unique narrative and passions in a single, elegant emblem.
+                </div>
+                <img src="/files/me11.jpg" id="myimagefull" alt="myimage">
+
+                <style>
+                    #myimagefull {
+                      width: 100%;
+                      height: fit-content;
+                      height: auto; /* This ensures the aspect ratio is maintained */
+                      display: block; /* Removes any default spacing or alignment issues */
+                    }
+                  </style>
             </div>
+
+            <div id="whatido">
+                <!-- <script type="module" src="https://unpkg.com/@splinetool/viewer@0.9.496/build/spline-viewer.js"></script>
+                <spline-viewer class="globe" url="https://prod.spline.design/O-OJV9EPoIUlcCXv/scene.splinecode"></spline-viewer> -->
+
+                <div class="aboutmehead">
+                    WHAT I DO
+                </div>
+                <div class="aboutme">
+                    <div style="mix-blend-mode: difference;">
+                        WEBSITE DEVELOPMENT
+                    </div>
+                    <hr style="mix-blend-mode: difference;">
+                    <div style="mix-blend-mode: difference;">
+                        MULTIMEDIA DESIGN
+                    </div>
+                    <hr style="mix-blend-mode: difference;">
+                    <div style="mix-blend-mode: difference;">
+                        MOBILE PHOTOGRAPHY
+                    </div>
+                    <hr style="mix-blend-mode: difference;">
+                    <div style="mix-blend-mode: difference;">
+                        JOURNAL WRITE UPS
+                    </div>
+                    <hr style="mix-blend-mode: difference;">
+                    <div style="mix-blend-mode: difference;">
+                        CAMPUS LEADERSHIP
+                    </div>
+                    <hr style="mix-blend-mode: difference;">
+                    <div style="mix-blend-mode: difference;">
+                        YOUTH VOLUNTEERISM
+                    </div>
+                    <hr style="mix-blend-mode: difference;">
+                </div>
+                </div>
+
+            <div class="works">
+                <div>
+                    <h1 id="headpara">About this Website</h1>
+                    <p id="paragraphs" style="margin-top: 1.5%; margin-bottom: 1.5%;">This website is the first website and an academic project crafted by Amerogin Kamid, a junior student at Sultan Kudarat State University - Isulan Campus, currently pursuing his undergraduate degree in Computer Science. It was developed as part of a course instructed by Professor Elbren O. Antonio, DIT, who ignited Amerogin's passion for creative technology. Amerogin expresses sincere gratitude to Professor Antonio for this inspiration.</p>
+                    <p id="paragraphs" style="margin-top: 1.5%; margin-bottom: 1.5%;">The website's creation spanned two weeks, during which Amerogin, despite tight schedules, meticulously designed it. The process began with conceptualization and involved researching numerous trending website portfolios from 2023 for inspiration. Although the website is still under construction, Amerogin has incorporated all the essentials. He plans to continue refining this personal portfolio even after completing the course. Dr. Elbren emphasized that the website is a representation of Amerogin in the field, serving as a powerful tool for marketing himself and showcasing the projects and works he undertakes in future employments or project auditions.</p>
+
+                    <p id="paragraphs">Thank you Prof. Elbren and to all the others projects he have taken inspirations from:<br> https://minhpham.design/, lenis, and to the uncountable YouTube Tutorial Videos</p>
+
+                <img id="sign" src="/files/sign.png" alt="">
+                </div>
+
+                <img id="works-singles" src="/files/mylaptop.jpg">
+
+                <div style="color: transparent;">Works</div>
+
+                <img id="works-singles" src="/files/phone.jpg">
+                <div>
+                    <img id="works-singles" src="/files/phone2.jpg">
+                    <div>
+                    <h1 id="headpara">Android Development</h1>
+
+                    <h1 id="headpara" style="font-size: 18px; margin-top: 0%">Project Title: Blended Learning Platform with Integrated Educational Tools</h1>
+                    <h1 id="headpara" style="font-size: 18px; margin-top: 0%">Project Aliases: Deered (Stylized as “DEERED” and also known as “DEERED for Students & Educators”)</h1>
+
+                    <p id="paragraphs" style="margin-top: 1.5%; margin-bottom: 1.5%;">Deered is a mobile app designed to provide Sultan Kudarat State University students with a comprehensive solution for all their academic needs. The app offers a range of features (as of pre-alpha stage) that enable students to register for classes, access the school portal, organize their schedules, and connect with peers and educators, all in that one place. My mission is not just to create an application and submit this for compliance but I really want assist students and educators of SKSU for their academic and professional pursuit in a more modern experience of technology through portability and mobility in a virtual tool. I envision that this app would be a one-of-a-kind android multi-tool for SKSU students that continually supports them in preparation for their future. And my main goal is to give remote ease to them by empowering them through advanced and accessible information and technology.</p>
+                    <p id="paragraphs">This includes, a systematic and organized profiling were included as part of taking an account and authenticating based on ownership that began from registration, an interactable and synchronized data exchanges, multimedia filing, a posting feature where educators are enabled to give timed activities and students to take on what’s being posted as a mandatory or non-mandatory to comply on, communicate by, and be able to see a static schedule that was given by their instructors, and that can also be re-created dynamically so to modified according to the students personalization. </p>
+                </div>
+
+                <div class="image-container">
+                    <img src="/files/editing.jpg" alt="Image 1">
+                    <img src="/files/editing2.jpg" alt="Image 2">
+                </div>
+                <img id="works-singles" src="/files/audioeditor.png">
+                <img id="works-singles" src="/files/videofilm.jpg">
+                <img id="works-singles" src="/files/lookingback.jpg">
+                <div class="image-container">
+                    <img src="/files/audioe1.jpg" alt="Image 3">
+                    <img src="/files/audioe2.jpg" alt="Image 4">
+                </div>
+                <div>
+                    <h1 id="headpara">Director + Scriptwriter + Audio Editor + Visual Head + Actor</h1>
+                    <p id="paragraphs" style="margin-top: 1.5%; margin-bottom: 1.5%;">I'm not just a director—I'm the architect of stories, a maestro of editing, and a visual storyteller. Let me walk you through two projects that define my journey.
+
+                        First up, the Regional PSITS' Video Advocacy. Out of 18 competing entries, I wore multiple hats as the scriptwriter, director, and visual head. The result? We clinched the 3rd position, marking a milestone in our storytelling prowess. It wasn't just a win; it was a testament to the impact of a well-crafted narrative.
+
+                        Then came the academic video film project. I did it all—editing, acting, film poster making, and marketing. It was a challenge, no doubt, but it was equally fulfilling. Every late-night edit and every character portrayed on screen was a personal triumph.</p>
+                    <p id="paragraphs" style="margin-top: 1.5%;">As a director, I've learned that filmmaking is not just about capturing moments; it's about creating them. Each project tells a different story, showcasing my diverse skills and unwavering commitment to cinematic excellence. The Regional PSITS' Video Advocacy and the academic video film project are not just highlights; they are the essence of my dedication to the craft. And they are just glimpses.</p>
+                </div>
+                <img id="works-singles" src="/files/graphicdesigner.jpg">
+                <img id="works-singles" src="/files/graphicsmain.jpg">
+                <img id="works-singles" src="/files/graphics.png">
+                <img id="works-singles" src="/files/graphics3.jpg">
+                <img id="works-singles" src="/files/graphics2.png">
+                <img id="works-singles" src="/files/graphics4.jpg">
+
+                <div>
+                    <h1 id="headpara">My Other World: Graphic Designing</h1>
+                    <p id="paragraphs" style="margin-top: 1.5%; margin-bottom: 1.5%;">Let me paint a picture of my world, where every pixel has a purpose, and every line tells a story.
+
+                        Based in the lively City of Tacurong, Philippines, I am not just a graphic designer; I am a visual storyteller with a penchant for minimalist design and contemporary aesthetics. My creative journey is an exploration of the delicate balance between technology and empathy.
+
+                        Specializing in logos and seals, I infuse each design with the essence of my heritage as a proud member of the Maguindanaon-Ilonggo tribe. For me, it's not just about creating visually appealing graphics; it's about crafting narratives that resonate.
+
+                        As a dedicated advocate, my designs go beyond aesthetics. I've served as a former Advocate and Youth Officer of Barkada Kontra Droga, leaving an indelible mark on projects that amplify voices and champion local causes..</p>
+                    <p id="paragraphs" style="margin-top: 1.5%;">My design philosophy extends into the digital realm, where I seamlessly blend technical prowess with an empathetic spirit. Microsoft Skills? Check. Coding Prowess? Absolutely. Multimedia Tools? From Canva to Adobe, I navigate them with ease.
+
+                        Every stroke of my digital brush is backed by a wealth of experience. From being a Freelance Writer, Layout Artist, and Computer Technician to serving as a Board Member and President of the Book Club at Sultan Kudarat State University, I've honed my skills across various domains.
+
+                        Achievements? I've got a few. From winning 3rd place in the Video Advocacy competition to crafting award-winning campaign materials for the City Disaster Risk Reduction and Management Council of Tacurong, my designs are not just visually pleasing; they're impactful.</p>
+                </div>
+
+                <img id="works-singles" src="/files/sprout/1.jpg">
+                <img id="works-singles" src="/files/sprout/2.jpg">
+                <img id="works-singles" src="/files/sprout/3.jpg">
+                <img id="works-singles" src="/files/sprout/4.jpg">
+                <img id="works-singles" src="/files/sprout/5.jpg">
+                <img id="works-singles" src="/files/sprout/6.jpg">
+                <img id="works-singles" src="/files/sprout/7.jpg">
+                <img id="works-singles" src="/files/sprout/8.jpg">
+                <img id="works-singles" src="/files/sprout/9.jpg">
+                <img id="works-singles" src="/files/sprout/10.jpg">
+                <img id="works-singles" src="/files/sprout/11.jpg">
+                <img id="works-singles" src="/files/sprout/12.jpg">
+                <img id="works-singles" src="/files/sprout/13.jpg">
+                <div>
+                    <h1 id="headpara">Photography Album Higlight: DAY TO BEGIN // 始める日</h1>
+                    <p id="paragraphs" style="margin-top: 1.5%; margin-bottom: 1.5%;">📍 Dalapitan, Cotabato</p>
+                    <p id="paragraphs" style="margin-top: 1.5%;">Images by Amerogin Kamid | @mtfugin__00</p>
+                </div>
+
+                <img id="works-singles" src="/files/fwends/1.jpg">
+                <img id="works-singles" src="/files/fwends/2.jpg">
+                <img id="works-singles" src="/files/fwends/3.jpg">
+                <img id="works-singles" src="/files/fwends/4.jpg">
+                <div>
+                    <h1 id="headpara">Photography Album Higlight: 「 私 の 記 憶 か ら の 写 真 」
+— mga litrato mula sa'king gunita</h1>
+                    <p id="paragraphs" style="margin-top: 1.5%; margin-bottom: 1.5%;">📍 Amar Primeval Farm, President Quirino</p>
+                    <p id="paragraphs" style="margin-top: 1.5%;">Images by Amerogin Kamid | @mtfugin__00</p>
+                </div>
+
+                <img id="works-singles" src="/files/bea/1.jpg">
+                <img id="works-singles" src="/files/bea/2.jpg">
+                <img id="works-singles" src="/files/bea/3.jpg">
+                <img id="works-singles" src="/files/bea/4.jpg">
+                <img id="works-singles" src="/files/bea/5.jpg">
+                <img id="works-singles" src="/files/bea/6.jpg">
+                <img id="works-singles" src="/files/bea/7.jpg">
+                <img id="works-singles" src="/files/bea/8.jpg">
+                <img id="works-singles" src="/files/bea/9.jpg">
+                <img id="works-singles" src="/files/bea/10.jpg">
+                <div>
+                    <h1 id="headpara">Photography Album Higlight: ⁰夢想と流動 For the love, forever ago.</h1>
+                    <p id="paragraphs" style="margin-top: 1.5%; margin-bottom: 1.5%;">📍 Tacurong City</p>
+                    <p id="paragraphs" style="margin-top: 1.5%;">Images by Amerogin Kamid | @mtfugin__00</p>
+                </div>
+
+
+                <img id="works-singles" src="/files/leadership, journalism, and youth volunteerism/hero.jpg">
+                <img id="works-singles" src="/files/leadership, journalism, and youth volunteerism/writer.jpg">
+                <img id="works-singles" src="/files/leadership, journalism, and youth volunteerism/techno.jpg">
+                <img id="works-singles" src="/files/leadership, journalism, and youth volunteerism/volunteerism.jpg">
+                <img id="works-singles" src="/files/leadership, journalism, and youth volunteerism/speaking.jpg">
+                <img id="works-singles" src="/files/leadership, journalism, and youth volunteerism/leadership2.jpg">
+                <img id="works-singles" src="/files/leadership, journalism, and youth volunteerism/leadership.jpg">
+                <div>
+                    <h1 id="headpara">Leadership Luminary: The Multi-Faceted Odyssey</h1>
+                    <p id="paragraphs" style="margin-top: 1.5%; margin-bottom: 1.5%; margin-right: 50%;"> A dynamic force weaving through the realms of leadership, journalism, and youth volunteerism. Allow me to illuminate the chapters of my journey where service, communication, and compassion intersect.</p>
+
+
+                    <h1 id="headpara" style="font-size: 18px; margin-top: 3%">Leadership Trailblazer</h1>
+                    <p id="paragraphs" style="margin-top: 1.5%; margin-bottom: 1.5%; margin-right: 50%;">In the vibrant tapestry of leadership, I've left my mark as a former Advocate and Youth Officer of Barkada Kontra Droga at Tacurong National High School. My stint as a Student Leader and Grade 12 Representative in the Supreme Student Government further solidified my commitment to steering change.</p>
+                    <p id="paragraphs" style="margin-top: 1.5%; margin-bottom: 1.5%; margin-right: 50%;">Currently, as a Board Member of the Student Body Organization at Sultan Kudarat State University, I continue to lead with a vision. Whether navigating the complexities of web development with Icreatechs or championing the love for books as the President of the Book Club, leadership, for me, is about service and inspiration.</p>
+
+                    <h1 id="headpara" style="font-size: 18px; margin-top: 3%">Journalism Maven</h1>
+                    <p id="paragraphs" style="margin-top: 1.5%; margin-bottom: 1.5%; margin-right: 50%;">As a former Journalist and Circulation Manager of 'The Technopipeline,' the official campus publication at Sultan Kudarat State University, I've wielded the power of the written word. From technical writing to creative expression, I've honed my skills, earning recognition as a Leadership Service Awardee during my high school years.</p>
+                    <p id="paragraphs" style="margin-top: 1.5%; margin-bottom: 1.5%; margin-right: 50%;">My pen has danced across pages, capturing stories that matter. As an Ambassador of Aanihin, a fundraising project at the University of the Philippines Alya, I've used journalism to amplify causes close to my heart.</p>
+                    <h1 id="headpara" style="font-size: 18px; margin-top: 3%">Youth Volunteer Extraordinaire</h1>
+                    <p id="paragraphs" style="margin-top: 1.5%; margin-bottom: 1.5%; margin-right: 50%;">Stepping into the arena of youth volunteerism, I've served as the Lead of Creatives for Bulig Ta!curong, a local non-profit youth organization. Whether assisting victims of Typhoon Ulysses or contributing to the community's welfare, my dedication to service is unwavering.</p>
+                    <p id="paragraphs" style="margin-top: 1.5%; margin-right: 50%;">My involvement in projects like the 5-Minute Pitching Demonstration and the Ethical Hacking Webinar Course showcases a diverse commitment to community development and technological awareness.</p>
+                </div>
+
 
             </div>
             </div>
+
+            </div>
+
+            </div>
+        </div>
         </div>
 
         <script>
  document.addEventListener("DOMContentLoaded", function () {
     const aboutMe = document.querySelector(".aboutme");
+    const aboutLogo = document.querySelector(".aboutlogo");
     const aboutMeHead = document.querySelector(".aboutmehead");
+    const viewCVbtn = document.querySelector(".viewCVbtn");
     const diffCursor = document.querySelector(".cursor-diff2");
 
     let isCursorVisible = false;
@@ -232,7 +439,15 @@
         fadeInCursor();
     });
 
+    aboutLogo.addEventListener("mouseover", function () {
+        fadeInCursor();
+    });
+
     aboutMeHead.addEventListener("mouseover", function () {
+        fadeInCursor();
+    });
+
+    viewCVbtn.addEventListener("mouseover", function () {
         fadeInCursor();
     });
 
@@ -240,7 +455,15 @@
         fadeOutCursor();
     });
 
+    aboutLogo.addEventListener("mouseout", function () {
+        fadeOutCursor();
+    });
+
     aboutMeHead.addEventListener("mouseout", function () {
+        fadeOutCursor();
+    });
+
+    viewCVbtn.addEventListener("mouseout", function () {
         fadeOutCursor();
     });
 
@@ -249,7 +472,18 @@
         updateCursor();
     });
 
+
+    aboutLogo.addEventListener("mousemove", function (e) {
+        updateCoords(e);
+        updateCursor();
+    });
+
     aboutMeHead.addEventListener("mousemove", function (e) {
+        updateCoords(e);
+        updateCursor();
+    });
+
+    viewCVbtn.addEventListener("mousemove", function (e) {
         updateCoords(e);
         updateCursor();
     });
@@ -271,55 +505,71 @@
 
         </script>
 
-        <div id="footer">
-        <a href="mailto:ameroginkamid@gmail.com" title="Click to send an E-mail">
-            > Email Amerogin
-        </a>
+        <div style="color: transparent; background-color: #dad2c1;">Works</div>
 
-        <br>
+        <div class="footer">
+            <div id="footer">
 
-        <a href="test.html" title="Go to the Test Page">
-            > Test Page
-        </a>
-        <button onclick="togglePlayPause()" id="playPauseButton" style="display: none;">Pause</button>
-        <section id="bottom"></section>
-        <script>
-            var audioFiles = [
-                '/sounds/anima.m4a',
-                '/sounds/totoro.mp3',
-                '/sounds/bygonedays.mp3'
-            ];
-            var currentAudioIndex = 0;
-            var backgroundMusic = new Audio(audioFiles[currentAudioIndex]);
-            backgroundMusic.volume = 0.1; // Set the initial volume here (between 0 and 1)
-            backgroundMusic.addEventListener('ended', function() {
-                currentAudioIndex = (currentAudioIndex + 1) % audioFiles.length;
-                backgroundMusic.src = audioFiles[currentAudioIndex];
-                backgroundMusic.play();
-            });
 
-            var soundtoggle = document.querySelector('.soundtoggle a'); // selecting the 'a' tag within the element with class 'soundtoggle'
+                <footer>
+                    <p>Phone Number: 09061322917</p>
+                    <p>Email: <a href="mailto:ameroginkamid@gmail.com">ameroginkamid@gmail.com</a></p>
+                    <p>Location: Tacurong City, Sultan Kudarat, Philippines</p>
+                    <br>
+                    <p>COPYRIGHT © 2023 AMEROGIN KAMID<br>ALL RIGHTS RESERVED <br>ムトフギン</p>
+                  </footer>
 
-            function togglePlayPause() {
-                var playPauseButton = document.getElementById('playPauseButton'); // assuming there is an element with ID 'playPauseButton'
-                if (backgroundMusic.paused) {
+                <a style="display: none;" href="mailto:ameroginkamid@gmail.com" title="Click to send an E-mail">
+                    > Email Amerogin
+                </a>
+
+                <br>
+
+                <a style="display: none;" href="test.html" title="Go to the Test Page">
+                    > Test Page
+                </a>
+                <button onclick="togglePlayPause()" id="playPauseButton" style="display: none;">Pause</button>
+                <section id="bottom"></section>
+                <script>
+                    var audioFiles = [
+                        '/sounds/anima.m4a',
+                        '/sounds/totoro.mp3',
+                        '/sounds/bygonedays.mp3'
+                    ];
+                    var currentAudioIndex = 0;
+                    var backgroundMusic = new Audio(audioFiles[currentAudioIndex]);
+                    backgroundMusic.volume = 0.1; // Set the initial volume here (between 0 and 1)
+                    backgroundMusic.addEventListener('ended', function() {
+                        currentAudioIndex = (currentAudioIndex + 1) % audioFiles.length;
+                        backgroundMusic.src = audioFiles[currentAudioIndex];
+                        backgroundMusic.play();
+                    });
+
+                    var soundtoggle = document.querySelector('.soundtoggle a'); // selecting the 'a' tag within the element with class 'soundtoggle'
+
+                    function togglePlayPause() {
+                        var playPauseButton = document.getElementById('playPauseButton'); // assuming there is an element with ID 'playPauseButton'
+                        if (backgroundMusic.paused) {
+                            backgroundMusic.play();
+                            playPauseButton.innerHTML = 'Pause';
+                            soundtoggle.innerHTML = 'SOUND ON';
+                            soundtoggle.style.color = '#fff9eb';
+                        } else {
+                            backgroundMusic.pause();
+                            playPauseButton.innerHTML = 'Play';
+                            soundtoggle.innerHTML = 'SOUND OFF';
+                            soundtoggle.style.color = '#fff9eb41';
+                        }
+                    }
+
+                    // Autoplay the first audio
                     backgroundMusic.play();
-                    playPauseButton.innerHTML = 'Pause';
-                    soundtoggle.innerHTML = 'SOUND ON';
-                    soundtoggle.style.color = '#fff9eb';
-                } else {
                     backgroundMusic.pause();
-                    playPauseButton.innerHTML = 'Play';
-                    soundtoggle.innerHTML = 'SOUND OFF';
-                    soundtoggle.style.color = '#fff9eb41';
-                }
-            }
 
-            // Autoplay the first audio
-            backgroundMusic.play();
-            backgroundMusic.pause();
+                </script>
 
-        </script>
+        </div>
+
         </div>
     </body>
 </html>
